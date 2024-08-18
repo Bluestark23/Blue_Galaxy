@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://s8an0hlwcv5u"]
+
+[ext_resource type="PackedScene" uid="uid://cqaesr1v8i3mc" path="res://Scenes/Bordes_h.tscn" id="1_evxmc"]
+[ext_resource type="PackedScene" uid="uid://dgf5ft226vvoe" path="res://Scenes/Bordes_v.tscn" id="2_s7w4o"]
+[ext_resource type="PackedScene" uid="uid://cxf12jwp45duj" path="res://Scenes/Player.tscn" id="3_s1gsm"]
+[ext_resource type="PackedScene" uid="uid://c6uc6ho0xt1xy" path="res://Scenes/parallax_background.tscn" id="4_1gpb2"]
+[ext_resource type="PackedScene" uid="uid://pmull6kic4om" path="res://Scenes/Spawn/SpawnAsteroid.tscn" id="5_fy4on"]
+[ext_resource type="PackedScene" uid="uid://dw748x6wsvoe0" path="res://Scenes/pausa.tscn" id="6_qnk4t"]
+
+[node name="Level" type="Node2D"]
+
+[node name="Bordes" parent="." instance=ExtResource("1_evxmc")]
+position = Vector2(-5, 0)
+
+[node name="Bordes2" parent="." instance=ExtResource("2_s7w4o")]
+position = Vector2(3, 3)
+
+[node name="Bordes3" parent="." instance=ExtResource("1_evxmc")]
+position = Vector2(3, 708)
+
+[node name="Bordes4" parent="." instance=ExtResource("2_s7w4o")]
+position = Vector2(1222, 3)
+
+[node name="Player" parent="." instance=ExtResource("3_s1gsm")]
+position = Vector2(671, 352)
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("4_1gpb2")]
+
+[node name="World" parent="." instance=ExtResource("5_fy4on")]
+
+[node name="Pausa" parent="." instance=ExtResource("6_qnk4t")]

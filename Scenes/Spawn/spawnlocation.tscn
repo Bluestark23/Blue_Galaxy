@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8hb4hefv0d0h"]
+
+[ext_resource type="Texture2D" uid="uid://us0227xm60pb" path="res://Images/Asteroid.png" id="1_wnpfx"]
+
+[node name="spawnlocation" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wnpfx")
